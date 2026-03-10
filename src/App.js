@@ -1673,12 +1673,29 @@ export default function App() {
         .empty-text { color: var(--text-muted); font-size: 0.875rem; }
 
         @media (max-width: 768px) {
-          .stats-grid { grid-template-columns: 1fr 1fr; }
+          .stats-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
           .form-grid { grid-template-columns: 1fr; }
           .pos-layout { flex-direction: column; }
           .pos-right { width: 100%; border-left: none; border-top: 1px solid var(--border); }
-          .page { padding: 16px; }
+          .page { padding: 12px; }
+          .page-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+          .page-header h2 { font-size: 1.3rem; }
           .sidebar { position: fixed; z-index: 200; height: 100vh; }
+          .app { overflow-x: hidden; }
+          .main { min-width: 0; overflow-x: hidden; }
+          .card { padding: 14px; }
+          .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+          table { min-width: 500px; }
+          .stat-card { padding: 14px; }
+          .stat-value { font-size: 1.5rem; }
+          .btn { padding: 8px 14px; font-size: 0.82rem; }
+          .btn-primary { min-height: 42px; }
+          input, select, textarea { font-size: 16px !important; }
+          .modal-overlay { align-items: flex-end; padding: 0; }
+          .modal { border-radius: 20px 20px 0 0; max-height: 90vh; overflow-y: auto; margin: 0; width: 100%; }
+          .login-card { padding: 28px 20px; }
+          .login-brand { font-size: 2rem; }
+          .tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
         }
       `}</style>
 
